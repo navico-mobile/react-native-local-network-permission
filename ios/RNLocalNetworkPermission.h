@@ -1,4 +1,3 @@
-
 #if __has_include("RCTBridgeModule.h")
 #import "RCTBridgeModule.h"
 #else
@@ -6,6 +5,5 @@
 #endif
 
 @interface RNLocalNetworkPermission : NSObject <RCTBridgeModule>
-
 @end
-  
+

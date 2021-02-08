@@ -3,16 +3,36 @@
   "name": "react-native-local-network-permission",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --config jestconfig.json",
+    "build": "tsc",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "lint": "tslint -p tsconfig.json"
   },
-  "keywords": [
-    "react-native"
+  "files": [
+    "lib/**/*"
   ],
-  "author": "",
-  "license": "",
+  "keywords": [
+    "react-native",
+    "local-network-permission"
+  ],
+  "author": "bruce <ljb_iss@hotmail.com>",
+  "license": "BSD-2",
   "peerDependencies": {
     "react-native": "^0.41.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^25.1.2",
+    "@types/react": "^16.9.19",
+    "@types/react-native": "^0.61.12",
+    "@types/react-test-renderer": "^16.9.2",
+    "jest": "^25.1.0",
+    "prettier": "^1.19.1",
+    "ts-jest": "^25.2.0",
+    "tslint": "^6.0.0",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.7.5"
   }
 }
