@@ -23,9 +23,13 @@ A temporary lib to handle the local network permission after iOS 14
 
 ## Usage
 ```javascript
-import RNLocalNetworkPermission from 'react-native-local-network-permission';
+import {checkLocalNetworkAccess,requestLocalNetworkAccess} from 'react-native-local-network-permission';
 
-// TODO: What to do with the module?
-RNLocalNetworkPermission;
+//you need to make sure the local network permission dialog popup once
+await requestLocalNetworkAccess();
+
+//then use checkLocalNetworkAccess when you need
+await checkLocalNetworkAccess();
+//here run the code depends local network access
 ```
   
